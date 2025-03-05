@@ -1,0 +1,924 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans';
+      /* background-image: url('bg-body.jpg'); */
+      /* background-size: ; */
+    }
+
+    /* .home-section {
+      background-color: hsla(240, 0%, 0%, 1);
+      background-image:
+        radial-gradient(at 44% 59%, hsla(233, 100%, 8%, 1) 0px, transparent 50%),
+        radial-gradient(at 90% 97%, hsla(240, 62%, 24%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(229, 55%, 19%, 1) 0px, transparent 50%);
+    } */
+
+    .inner-shadow {
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .fade-up-home {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s ease-out;
+    }
+    .fade-up-price {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s ease-out;
+    }
+    .fade-up-project {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s ease-out;
+    }
+    .fade-up-client-says {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s ease-out;
+    }
+    .fade-up-CTA {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s ease-out;
+    }
+  </style>
+  <link rel="stylesheet" href="mesh.css">
+
+</head>
+
+<body class="">
+  <div class="w-full z-50">
+    <nav class="fixed w-full text-gray-300 bg-gray-900/30 backdrop-blur-md border-b border-b-white/15 z-50">
+      <div class="flex flex-row items-center w-full px-6 py-3 justify-between">
+        <div>
+          <h1 class="font-semibold text-xl text-gray-300">Yahya Alifandi</h1>
+        </div>
+        <div class="hidden md:flex flex-row space-x-8 justify-center items-center">
+          <a href="#" class="text-[14px] hover:scale-95 duration-300 hover:text-white" aria-label="Home">Home</a>
+          <a href="#" class="text-[14px] hover:scale-95 duration-300 hover:text-white" aria-label="About Me">About
+            Me</a>
+          <a href="#" class="text-[14px] hover:scale-95 duration-300 hover:text-white" aria-label="Project">Project</a>
+          <a href="#" class="text-[14px] hover:scale-95 duration-300 hover:text-white" aria-label="Price">Price</a>
+        </div>
+        <div>
+          <button
+            class="btn-1 text-[13px] p-2 px-5 rounded-full border-gray-100/30 border hover:scale-105 active:scale-95 text-white/90 duration-300">Contact
+            Me</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- Tambahkan padding agar konten tidak tertutup navbar -->
+  <div class="main flex flex-col items-center h-screen w-full justify-center home-section p-5 md:p-0">
+    <div class="flex flex-col justify-center items-center mt-5">
+      <h1
+        class="w-auto bg-gradient-to-br from-slate-300 to-white/90 bg-clip-text text-transparent text-xl md:text-6xl text-center max-w-[75rem] fade-up-home opacity-0 translate-y-10 transition-all duration-700 ease-out">
+        <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent font-bold">Modern
+          Design</span>, Maximum Performance – A Website Ready to Compete!
+      </h1>
+      <p class="text-gray-300 font-thin text-sm md:text-lg text-center mt-6 fade-up-home">Modern, responsive, and SEO-friendly design for more
+        advanced businesses.</p>
+      <div class="flex md:flex-row flex-col justify-center items-center mt-10 md:space-x-10 space-y-5 md:space-y-0">
+        <button
+          class="fade-up-home btn-1 rounded-lg py-3 px-8 text-white hover:scale-105 duration-300 bg-gradient-to-r from-salte-300 to-white/15 border border-white/50"><i
+            class="fa-solid fa-phone mr-3"></i>Contact Me</button>
+        <button
+          class="border border-white/15 backdrop-blur-lg bg-white/5 rounded-lg py-3 px-8 text-white hover:scale-105 duration-300 fade-up-home">My
+          Project<i class="fa-solid fa-arrow-right ml-2"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-section w-auto flex bg-slate-900 flex-col items-center p-4 md:p-10">
+    <div class="title flex flex-col justify-center items-center">
+      <h1 class="text-white text-xl md:text-3xl text-center w-full max-w-[75rem] fade-up-price">
+        Professional & Quality Web Development Services!
+      </h1>
+      <h1 class="text-gray-500 mt-4 text-sm md:text-base text-center w-full max-w-[75rem] fade-up-price">
+        Kami di sini memberikan pelayanan yang cepat dengan harga yang terjangkau.
+      </h1>
+    </div>
+    
+    <!-- Landing Page Service Section -->
+    <div class="bg-white/5 border border-white/15 rounded-lg mt-6 md:mt-10 fade-up-price w-full max-w-[75rem] overflow-hidden">
+      <div class="title py-4 md:py-5">
+        <h1 class="text-white text-lg md:text-xl text-center font-semibold">
+          Landing Page
+        </h1>
+      </div>
+      <hr class="border border-white/15">
+      <div class="flex justify-center py-6 md:py-10 px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full">
+          
+          <!-- Paket Basic -->
+          <div class="fade-up-price bg-gradient-to-b from-gray-800 to-gray-900 h-full rounded-2xl p-4 md:p-6 text-white shadow-inner shadow-white/10">
+            <div class="flex flex-col text-center items-center">
+              <h1 class="text-gray-400 text-xs md:text-sm">Website</h1>
+              <h1 class="text-lg md:text-xl font-semibold bg-gradient-to-r from-blue-600 to-transparent px-2 py-1 rounded-md">
+                Basic Plan
+              </h1>
+            </div>
+  
+            <div class="mt-4 md:mt-6">
+              <div class="text-center">
+                <h1 class="text-gray-300 text-base md:text-lg font-medium">FEATURES</h1>
+                <p class="text-gray-400 text-xs md:text-sm">Apa yang Anda dapatkan?</p>
+              </div>
+  
+              <div class="mt-3 md:mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Landing page 1 halaman</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Desain responsif (mobile-friendly)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">SEO dasar (meta tag, sitemap.xml)</span>
+                </div>
+              </div>
+  
+              <div class="mt-4 md:mt-6">
+                <button class="w-full bg-gray-800 p-2 md:p-3 rounded-lg text-gray-200 text-sm md:text-base font-medium shadow-inner shadow-gray-700/30 
+                      hover:bg-gray-700 hover:text-white hover:shadow-gray-600/40 transition duration-300">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Paket Standard -->
+          <div class="fade-up-price bg-gradient-to-b from-gray-800 to-gray-900 h-full rounded-2xl p-4 md:p-6 text-white shadow-inner shadow-white/10">
+            <div class="flex flex-col text-center items-center">
+              <h1 class="text-gray-400 text-xs md:text-sm">Website</h1>
+              <h1 class="text-lg md:text-xl font-semibold bg-gradient-to-r from-green-600 to-transparent px-2 py-1 rounded-md">
+                Standard Plan
+              </h1>
+            </div>
+  
+            <div class="mt-4 md:mt-6">
+              <div class="text-center">
+                <h1 class="text-gray-300 text-base md:text-lg font-medium">FEATURES</h1>
+                <p class="text-gray-400 text-xs md:text-sm">Apa yang Anda dapatkan?</p>
+              </div>
+  
+              <div class="mt-3 md:mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Semua fitur Basic Plan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Multiple pages (Home, About, Contact, dll.)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Animasi interaktif (GSAP, AOS, dll.)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Google Analytics & Pixel Tracking</span>
+                </div>
+              </div>
+  
+              <div class="mt-4 md:mt-6">
+                <button class="w-full bg-gray-800 p-2 md:p-3 rounded-lg text-gray-200 text-sm md:text-base font-medium shadow-inner shadow-gray-700/30 
+                    hover:bg-gray-700 hover:text-white hover:shadow-gray-600/40 transition duration-300">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Paket Premium -->
+          <div class="fade-up-price bg-gradient-to-b from-gray-800 to-gray-900 h-full rounded-2xl p-4 md:p-6 text-white shadow-inner shadow-white/10 md:col-span-2 lg:col-span-1 mx-auto md:mx-0 w-full max-w-xs md:max-w-none">
+            <div class="flex flex-col text-center items-center">
+              <h1 class="text-gray-400 text-xs md:text-sm">Website</h1>
+              <h1 class="text-lg md:text-xl font-semibold bg-gradient-to-r from-yellow-600 to-transparent px-2 py-1 rounded-md">
+                Premium Plan
+              </h1>
+            </div>
+  
+            <div class="mt-4 md:mt-6">
+              <div class="text-center">
+                <h1 class="text-gray-300 text-base md:text-lg font-medium">FEATURES</h1>
+                <p class="text-gray-400 text-xs md:text-sm">Apa yang Anda dapatkan?</p>
+              </div>
+  
+              <div class="mt-3 md:mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Semua fitur Standard Plan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Desain UI/UX eksklusif & interaktif</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Custom form (Formspree, Netlify Forms)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Integrasi chatbot (Tawk.to, Crisp, dll.)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Backup & pemeliharaan X bulan</span>
+                </div>
+              </div>
+  
+              <div class="mt-4 md:mt-6">
+                <button class="w-full bg-gray-800 p-2 md:p-3 rounded-lg text-gray-200 text-sm md:text-base font-medium shadow-inner shadow-gray-700/30 
+                      hover:bg-gray-700 hover:text-white hover:shadow-gray-600/40 transition duration-300">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Professional Website Section -->
+    <div class="bg-white/5 border border-white/15 rounded-lg mt-6 md:mt-10 fade-up-price w-full max-w-[75rem] overflow-hidden">
+      <div class="title py-4 md:py-5">
+        <h1 class="text-white text-lg md:text-xl text-center font-semibold">
+          Professional Website
+        </h1>
+      </div>
+      <hr class="border border-white/15">
+      <div class="flex justify-center py-6 md:py-10 px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full">
+          
+          <!-- Paket Basic -->
+          <div class="fade-up-price bg-gradient-to-b from-gray-800 to-gray-900 h-full rounded-2xl p-4 md:p-6 text-white shadow-inner shadow-white/10">
+            <div class="flex flex-col text-center items-center">
+              <h1 class="text-gray-400 text-xs md:text-sm">Website</h1>
+              <h1 class="text-lg md:text-xl font-semibold bg-gradient-to-r from-blue-600 to-transparent px-2 py-1 rounded-md">
+                Basic Plan
+              </h1>
+            </div>
+  
+            <div class="mt-4 md:mt-6">
+              <div class="text-center">
+                <h1 class="text-gray-300 text-base md:text-lg font-medium">FEATURES</h1>
+                <p class="text-gray-400 text-xs md:text-sm">Apa yang Anda dapatkan?</p>
+              </div>
+  
+              <div class="mt-3 md:mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Landing page 1 halaman</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Desain responsif (mobile-friendly)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">SEO dasar (meta tag, sitemap.xml)</span>
+                </div>
+              </div>
+  
+              <div class="mt-4 md:mt-6">
+                <button class="w-full bg-gray-800 p-2 md:p-3 rounded-lg text-gray-200 text-sm md:text-base font-medium shadow-inner shadow-gray-700/30 
+                      hover:bg-gray-700 hover:text-white hover:shadow-gray-600/40 transition duration-300">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Paket Standard -->
+          <div class="fade-up-price bg-gradient-to-b from-gray-800 to-gray-900 h-full rounded-2xl p-4 md:p-6 text-white shadow-inner shadow-white/10">
+            <div class="flex flex-col text-center items-center">
+              <h1 class="text-gray-400 text-xs md:text-sm">Website</h1>
+              <h1 class="text-lg md:text-xl font-semibold bg-gradient-to-r from-green-600 to-transparent px-2 py-1 rounded-md">
+                Standard Plan
+              </h1>
+            </div>
+  
+            <div class="mt-4 md:mt-6">
+              <div class="text-center">
+                <h1 class="text-gray-300 text-base md:text-lg font-medium">FEATURES</h1>
+                <p class="text-gray-400 text-xs md:text-sm">Apa yang Anda dapatkan?</p>
+              </div>
+  
+              <div class="mt-3 md:mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Semua fitur Basic Plan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Multiple pages (Home, About, Contact, dll.)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Animasi interaktif (GSAP, AOS, dll.)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Google Analytics & Pixel Tracking</span>
+                </div>
+              </div>
+  
+              <div class="mt-4 md:mt-6">
+                <button class="w-full bg-gray-800 p-2 md:p-3 rounded-lg text-gray-200 text-sm md:text-base font-medium shadow-inner shadow-gray-700/30 
+                    hover:bg-gray-700 hover:text-white hover:shadow-gray-600/40 transition duration-300">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Paket Premium -->
+          <div class="fade-up-price bg-gradient-to-b from-gray-800 to-gray-900 h-full rounded-2xl p-4 md:p-6 text-white shadow-inner shadow-white/10 md:col-span-2 lg:col-span-1 mx-auto md:mx-0 w-full max-w-xs md:max-w-none">
+            <div class="flex flex-col text-center items-center">
+              <h1 class="text-gray-400 text-xs md:text-sm">Website</h1>
+              <h1 class="text-lg md:text-xl font-semibold bg-gradient-to-r from-yellow-600 to-transparent px-2 py-1 rounded-md">
+                Premium Plan
+              </h1>
+            </div>
+  
+            <div class="mt-4 md:mt-6">
+              <div class="text-center">
+                <h1 class="text-gray-300 text-base md:text-lg font-medium">FEATURES</h1>
+                <p class="text-gray-400 text-xs md:text-sm">Apa yang Anda dapatkan?</p>
+              </div>
+  
+              <div class="mt-3 md:mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Semua fitur Standard Plan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Desain UI/UX eksklusif & interaktif</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Custom form (Formspree, Netlify Forms)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Integrasi chatbot (Tawk.to, Crisp, dll.)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-white bg-gray-700 p-1.5 md:p-2 rounded-md shadow-md text-xs md:text-sm"></i>
+                  <span class="text-gray-300 text-xs md:text-sm">Backup & pemeliharaan X bulan</span>
+                </div>
+              </div>
+  
+              <div class="mt-4 md:mt-6">
+                <button class="w-full bg-gray-800 p-2 md:p-3 rounded-lg text-gray-200 text-sm md:text-base font-medium shadow-inner shadow-gray-700/30 
+                      hover:bg-gray-700 hover:text-white hover:shadow-gray-600/40 transition duration-300">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project -->
+
+  <div class="project-section flex flex-col w-full justify-center items-center p-4 md:p-10 home-section">
+    <h1 class="text-white text-2xl md:text-3xl text-center w-full md:max-w-5xl fade-up-project">
+      Our Work – A Real Proof of Expertise!
+    </h1>
+    <h1 class="text-gray-500 mt-2 md:mt-3 text-xs md:text-sm text-center w-full md:max-w-5xl fade-up-project">
+      The Projects We Build, The Satisfaction We Provide!
+    </h1>
+    <div class="card rounded-lg py-4 md:py-5 bg-white/5 text-white w-full border backdrop-blur-md border-white/15 mt-4 md:mt-5 fade-up-project">
+      <div class="flex justify-between items-center px-4 md:px-5">
+        <h1 class="text-white text-2xl md:text-3xl text-start">
+          Project
+        </h1>
+        <i class="fa-solid fa-ellipsis-h text-2xl md:text-4xl"></i>
+      </div>
+      <hr class="border border-white/15 w-full mt-3 md:mt-5">
+      <div class="flex justify-center items-center">
+        <div class="card-content p-3 md:p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mt-3 md:mt-5 w-full">
+          <!-- Project Card 1 -->
+          <div class="bg-white/10 backdrop-blur-lg border border-white/15 text-white rounded-lg p-4 md:p-6 shadow-inner shadow-white/10 fade-up-project relative">
+            <img alt="Decorative background image" class="w-full h-24 md:h-32 object-cover rounded-t-lg" 
+              src="https://storage.googleapis.com/a1aa/image/LvxxCq5J0MiVwo_2I-ZxXyK6dZexM_NlV2FRnkHRCDg.jpg" />
+            <div class="absolute top-2 right-2 bg-gradient-to-r from-orange-400 via-orange-400 to-transparent text-xs px-2 py-1 rounded-full">
+              Premium
+            </div>
+            <div class="text-xl md:text-3xl font-bold mb-3 md:mb-4 mt-3 md:mt-4">
+              Xenova Store - TopUp Game
+            </div>
+            <button class="bg-blue-500 text-white py-1.5 md:py-2 px-3 md:px-4 rounded-lg w-full mb-3 md:mb-4 text-sm md:text-base">
+              Choose this plan
+            </button>
+            <ul class="space-y-1 md:space-y-2 mb-3 md:mb-4">
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Supercharged crypto tools
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Personalized guidance
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Market insights
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                4 free seats available
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                1GB of cloud storage
+              </li>
+            </ul>
+            <div class="border-t border-gray-700 pt-3 md:pt-4">
+              <h3 class="text-xs text-gray-400 mb-1 md:mb-2">
+                TURQUOISE TREK +
+              </h3>
+              <ul class="space-y-1 md:space-y-2">
+                <li class="flex items-center text-xs md:text-sm flex-wrap">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Supercharged tools
+                  <span class="bg-gray-700 text-xs px-2 py-0.5 rounded-full ml-2 mt-0.5 md:mt-0">
+                    AI-based
+                  </span>
+                </li>
+                <li class="flex items-center text-xs md:text-sm">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Personalized guidance
+                </li>
+                <li class="flex items-center text-xs md:text-sm">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Market insights
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Project Card 2 -->
+          <div class="bg-white/10 backdrop-blur-lg border border-white/15 text-white rounded-lg p-4 md:p-6 shadow-inner shadow-white/10 fade-up-project relative">
+            <img alt="Decorative background image" class="w-full h-24 md:h-32 object-cover rounded-t-lg" 
+              src="https://storage.googleapis.com/a1aa/image/LvxxCq5J0MiVwo_2I-ZxXyK6dZexM_NlV2FRnkHRCDg.jpg" />
+            <div class="absolute top-2 right-2 bg-gradient-to-r from-orange-400 via-orange-400 to-transparent text-xs px-2 py-1 rounded-full">
+              Premium
+            </div>
+            <div class="text-xl md:text-3xl font-bold mb-3 md:mb-4 mt-3 md:mt-4">
+              Xenova Store - TopUp Game
+            </div>
+            <button class="bg-blue-500 text-white py-1.5 md:py-2 px-3 md:px-4 rounded-lg w-full mb-3 md:mb-4 text-sm md:text-base">
+              Choose this plan
+            </button>
+            <ul class="space-y-1 md:space-y-2 mb-3 md:mb-4">
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Supercharged crypto tools
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Personalized guidance
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Market insights
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                4 free seats available
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                1GB of cloud storage
+              </li>
+            </ul>
+            <div class="border-t border-gray-700 pt-3 md:pt-4">
+              <h3 class="text-xs text-gray-400 mb-1 md:mb-2">
+                TURQUOISE TREK +
+              </h3>
+              <ul class="space-y-1 md:space-y-2">
+                <li class="flex items-center text-xs md:text-sm flex-wrap">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Supercharged tools
+                  <span class="bg-gray-700 text-xs px-2 py-0.5 rounded-full ml-2 mt-0.5 md:mt-0">
+                    AI-based
+                  </span>
+                </li>
+                <li class="flex items-center text-xs md:text-sm">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Personalized guidance
+                </li>
+                <li class="flex items-center text-xs md:text-sm">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Market insights
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Project Card 3 -->
+          <div class="bg-white/10 backdrop-blur-lg border border-white/15 text-white rounded-lg p-4 md:p-6 shadow-inner shadow-white/10 fade-up-project relative">
+            <img alt="Decorative background image" class="w-full h-24 md:h-32 object-cover rounded-t-lg" 
+              src="https://storage.googleapis.com/a1aa/image/LvxxCq5J0MiVwo_2I-ZxXyK6dZexM_NlV2FRnkHRCDg.jpg" />
+            <div class="absolute top-2 right-2 bg-gradient-to-r from-orange-400 via-orange-400 to-transparent text-xs px-2 py-1 rounded-full">
+              Premium
+            </div>
+            <div class="text-xl md:text-3xl font-bold mb-3 md:mb-4 mt-3 md:mt-4">
+              Xenova Store - TopUp Game
+            </div>
+            <button class="bg-blue-500 text-white py-1.5 md:py-2 px-3 md:px-4 rounded-lg w-full mb-3 md:mb-4 text-sm md:text-base">
+              Choose this plan
+            </button>
+            <ul class="space-y-1 md:space-y-2 mb-3 md:mb-4">
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Supercharged crypto tools
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Personalized guidance
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Market insights
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                4 free seats available
+              </li>
+              <li class="flex items-center text-xs md:text-sm">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                1GB of cloud storage
+              </li>
+            </ul>
+            <div class="border-t border-gray-700 pt-3 md:pt-4">
+              <h3 class="text-xs text-gray-400 mb-1 md:mb-2">
+                TURQUOISE TREK +
+              </h3>
+              <ul class="space-y-1 md:space-y-2">
+                <li class="flex items-center text-xs md:text-sm flex-wrap">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Supercharged tools
+                  <span class="bg-gray-700 text-xs px-2 py-0.5 rounded-full ml-2 mt-0.5 md:mt-0">
+                    AI-based
+                  </span>
+                </li>
+                <li class="flex items-center text-xs md:text-sm">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Personalized guidance
+                </li>
+                <li class="flex items-center text-xs md:text-sm">
+                  <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                  Market insights
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Clients Says -->
+  <div class="client-says flex justify-center items-center w-full flex-col p-4 md:p-10 bg-slate-900">
+    <h1 class="text-white text-xl md:text-3xl text-center w-full max-w-7xl fade-up-client-says">
+      What Do Our Clients Say?
+    </h1>
+    <h1 class="text-gray-500 mt-2 md:mt-3 text-xs md:text-sm text-center w-full max-w-7xl fade-up-client-says">
+      Kepercayaan mereka adalah bukti kualitas layanan kami.
+    </h1>
+    <div class="card flex w-full justify-center items-center mt-3 md:mt-5 fade-up-client-says">
+      <div class="w-full max-w-full px-4 md:px-0 md:max-w-2xl">
+        <div class="card p-5 md:p-10 bg-gray-800/40 rounded-lg shadow-inner shadow-white/5 fade-up-client-says">
+          <p class="text-white/80 text-xs md:text-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Accusamus at molestiae repellendus nam consectetur quis optio unde magnam tenetur cumque blanditiis
+            consequuntur autem inventore sit dicta, ducimus esse assumenda veritatis?</p>
+          <div class="flex flex-col justify-center items-center mt-3 md:mt-5 fade-up-client-says">
+            <img
+              src="https://th.bing.com/th/id/R.7f74cdafb3416c87fcf605e66f4c12fd?rik=20zeF75LZuhQ7Q&riu=http%3a%2f%2fwww.thefamouspeople.com%2fprofiles%2fimages%2felon-musk-1.jpg&ehk=bGWEbcsdoxqEEwaNuveQSXmdQ1%2b%2bOFWRbnwdiGtgLoM%3d&risl=&pid=ImgRaw&r=0"
+              class="fade-up-client-says w-12 h-12 md:w-20 md:h-20 rounded-full border-2 border-white/30 object-cover" alt="Client Photo">
+            <h1 class="text-base md:text-lg text-gray-300 mt-2 fade-up-client-says">Mas Elon</h1>
+            <h1 class="text-xs md:text-sm text-gray-500 fade-up-client-says">Owner Tesla</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QTA -->
+  <div class="flex justify-center items-center w-full bg-transparent flex-col p-4 md:p-10 home-section h-auto md:h-[30rem]">
+    <h1 class="text-white text-xl md:text-3xl text-center w-full max-w-7xl fade-up-CTA">
+      Siap Meningkatkan Bisnis dengan Website Profesional?
+    </h1>
+    <h1 class="text-gray-500 mt-2 md:mt-3 text-xs md:text-sm text-center w-full max-w-7xl fade-up-CTA">
+      Jangan tunda lagi! Dapatkan website cepat, responsif, dan berkualitas
+    </h1>
+    <div class="card bg-white/5 border border-white/15 rounded-lg mt-4 md:mt-5 flex flex-col md:flex-row w-full max-w-xs sm:max-w-md md:max-w-2xl justify-between fade-up-CTA">
+      <div class="flex justify-center md:justify-start items-center p-4 md:p-5 text-white">
+        <h1 class="text-white text-base md:text-xl text-center md:text-start fade-up-CTA">
+          Buat Website Impian Anda Sekarang!
+        </h1>
+      </div>
+      <div class="card p-4 md:p-5 flex justify-center items-center fade-up-CTA">
+        <button
+          class="text-white bg-slate-900/30 px-4 py-2 md:px-5 md:py-3 rounded-lg border border-white/10 hover:scale-105 duration-300 text-sm md:text-base w-full md:w-auto">Contact
+          Me!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-slate-900 text-white py-10 px-5">
+    <div class=" mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div class="mb-6 md:mb-0 max-w-[30rem]">
+        <div class="flex items-center mb-4">
+          <img alt="Fincore logo" class="mr-2" height="40"
+            src="https://storage.googleapis.com/a1aa/image/Lj-u_xqFbi-78iNbKJHC4U70oDl5pTXAgfjGS3x9jZc.jpg"
+            width="40" />
+          <span class="text-xl font-bold">
+            Fincore
+          </span>
+        </div>
+        <p class="text-gray-400 mb-4">
+          Open a real-time window into your company's financial flow. With our innovative tracking system, you can
+          effortlessly follow the path of your company.
+        </p>
+        <div class="flex space-x-4">
+          <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+          </a>
+          <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-instagram">
+            </i>
+          </a>
+          <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-twitter">
+            </i>
+          </a>
+          <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-linkedin-in">
+            </i>
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-bold mb-4">
+            Quick Link
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                How It Works
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Features
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Our Products
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                New Articles
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Our Project
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-4">
+            Who We Are
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Insight
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-4">
+            Follow Us
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Dribbble
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Behance
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-4">
+            Company
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Integrations
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Support
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".fade-up-home").forEach((el, index) => {
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: index * 0.2, // Menambahkan delay bertahap untuk efek elegan
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+</script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".fade-up-price").forEach((el, index) => {
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: index * 0.2, // Menambahkan delay bertahap untuk efek elegan
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+</script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".fade-up-project").forEach((el, index) => {
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: index * 0.2, // Menambahkan delay bertahap untuk efek elegan
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+</script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".fade-up-client-says").forEach((el, index) => {
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: index * 0.2, // Menambahkan delay bertahap untuk efek elegan
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 130%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+</script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".fade-up-CTA").forEach((el, index) => {
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: index * 0.2, // Menambahkan delay bertahap untuk efek elegan
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 130%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+</script>
+
+</html>

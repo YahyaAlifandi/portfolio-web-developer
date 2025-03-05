@@ -1,0 +1,57 @@
+@keyframes hero-gradient-animation {
+    0% {
+        --c-0: hsla(235.32351325539992, 80%, 22%, 1);
+        --x-0: 85%;
+        --y-0: 85%;
+        --s-start-0: 17%;
+        --s-end-0: 62%;
+    }
+
+    100% {
+        --c-0: hsla(235.32351325539992, 80%, 22%, 1);
+        --x-0: 13%;
+        --y-0: 22%;
+        --s-start-0: 17;
+        --s-end-0: 66.6040062219273%;
+    }
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(235.32351325539992, 80%, 22%, 1)
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 17%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 62%
+}
+
+.home-section {
+    --c-0: hsla(235.32351325539992, 80%, 22%, 1);
+    --x-0: 85%;
+    --y-0: 85%;
+    background-color: hsla(233.99998384363514, 64%, 9%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), hsla(233.99998384363514, 64%, 9%, 1) var(--s-end-0));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: normal;
+}
